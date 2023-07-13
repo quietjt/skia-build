@@ -43,9 +43,9 @@ def main():
 
   # Apply patches
   subprocess.check_call(["git", "reset", "--hard"])
-  for x in pathlib.Path(os.pardir, 'patches').glob('*.patch'):
-    print("> Applying", x)
-    subprocess.check_call(["git", "apply", str(x)])
+  # for x in pathlib.Path(os.pardir, 'patches').glob('*.patch'):
+  #   print("> Applying", x)
+  #   subprocess.check_call(["git", "apply", str(x)])
 
   # git deps
   if 'windows' == common.system():
