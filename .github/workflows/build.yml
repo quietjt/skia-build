@@ -15,7 +15,7 @@ on:
 
 env:
   # version: m93-87e8842e8c
-  version: m115-3e827bac0c
+  version: m122-c6835e2d5f
 
 jobs:
   # macos:
@@ -122,7 +122,8 @@ jobs:
     runs-on: windows-2019
     strategy:
       matrix:
-        build_type: [Release, Debug]
+        # build_type: [Release, Debug]
+      build_type: [Debug]
       fail-fast: false
     steps:
       - uses: actions/checkout@v2
